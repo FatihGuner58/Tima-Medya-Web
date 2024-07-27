@@ -6,7 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../css dosyaları/iletisim.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+  
+  </head>
 <body>
     <div class="ust-header">
         <a href="#" class="mail"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
@@ -19,9 +23,9 @@
     </div>
 
     <header>
-        <!-- Logo ve navigasyon menüsü -->
+        
         <div class="logo">
-            <a href="index.html"><img class="logo-image" src="../images/icon.png" alt=""></a>
+            <a href="../index.html"><img class="logo-image" src="../images/icon.png" alt=""></a>
         </div>
         <!-- Hamburger Menü Butonu -->
         <button class="hamburger-menu">
@@ -39,20 +43,80 @@
                 <li><a href="#" id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg></a></li>
-                <li><a href="#" id="language"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
-                  </svg></a></li>
+                  <li class="dropdown">
+                    <a href="#" id="language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
+                        </svg>
+                    </a>
+                    
+                    <div class="dropdown-menu">
+                        <a href="#">İngilizce</a>
+                        <a href="#">Türkçe</a>
+                        <a href="#">Fransızca</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
 
+    <div class="hizmetler-title">Hizmetler</div>
 
+  <div class="iletisim-container">
+    <div class="iletisim-konum">
+      <iframe id="konum" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3006.7639442530804!2d29.00552400000001!3d41.096004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab74c57c39ba9%3A0x5499dded9689d897!2zS2F5xLFvxJ9sdSBIb2xkaW5n!5e0!3m2!1str!2str!4v1714746092049!5m2!1str!2str" width="100%" height="570" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+    </div>
+    <div class="iletisim-bilgiler">
+      <h2 id="iletisim-yazi">İletişim Bilgileri</h2>
+      
+      <div class="contact-item">
+        <svg id="telephone-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+        </svg>
+        <p><strong>Telefon:</strong> +90 212 2727240</p>
+      </div>
+      
+      <div class="contact-item">
+        <svg id="mail-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+          <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+        </svg>
+        <p><strong>E-posta:</strong> info@timamedya.com</p>
+      </div>
+      
+      <div class="contact-item">
+        <svg id="location-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+          <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"/>
+        </svg>
+        <p><strong>Konum:</strong> Huzur, Fatih Cd. Kayıoğlu Plaza No:101A, 34396 Sarıyer/İstanbul</p>
+      </div>
+    </div>
+</div>
 
+<div class="iletisim-right">
+    <div class="iletisim-title">
+        <h1 id="iletisim-write">Bizimle İletişime Geçin</h1>
+    </div>
+    <div class="iletisim-inputs">
+        <div class="input-group">
+            <input id="input" type="text" placeholder="Telefon">
+            <input id="input" type="text" placeholder="Email Adresi">
+        </div>
+        <div class="input-group">
+            <input id="input" type="text" placeholder="Ad Soyad">
+            <input id="input" type="text" placeholder="Telefon">
+        </div>
+        <div class="input-group">
+            <input id="input" type="text" placeholder="Mesajınız" class="textarea">
+        </div>
+        <input id="input" type="submit" value="Gönder" class="submit-button">
+    </div>
+</div>
 
     <footer>
         <div class="footer-container">
         <div class="footer1">
-            <img id="footer-logo" src="./images/icon.png" alt="">
+            <img id="footer-logo" src="../images/icon.png" alt="">
            
         </div>
         

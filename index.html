@@ -6,6 +6,7 @@
     <title>Anasayfa</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="ust-header">
@@ -19,11 +20,11 @@
     </div>
 
     <header>
-        <!-- Logo ve navigasyon menüsü -->
+
         <div class="logo">
             <a href="index.html"><img class="logo-image" src="./images/icon.png" alt=""></a>
         </div>
-        <!-- Hamburger Menü Butonu -->
+
         <button class="hamburger-menu">
             <span class="bar"></span>
             <span class="bar"></span>
@@ -39,42 +40,56 @@
                 <li><a href="#" id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg></a></li>
-                <li><a href="#" id="language"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
-                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
-                  </svg></a></li>
+                  <li class="dropdown">
+                    <a href="#" id="language">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe-central-south-asia" viewBox="0 0 16 16">
+                            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
+                        </svg>
+                    </a>
+                  
+                    <div class="dropdown-menu">
+                        <a href="#">İngilizce</a>
+                        <a href="#">Türkçe</a>
+                        <a href="#">Fransızca</a>
+                    </div>
+                </li>
             </ul>
         </div>
     </header>
     <nav class="nav-one">
-        
-     <div class="content" id="anasayfa-content">
-		<div id="container">
-			<img src="./images/banner-mob-one.jpg" alt="Yeni Nesil Medya Resmi" class="nesil-medya-resim" id="image1" width="280px" height="250px">
-			<img src="./images/portfolio-detail-img1-one.jpg" alt="Yeni Nesil Medya Resmi" class="nesil-medya-resim" id="image2" width="280px" height="250px">
-			<img src="./images/portfolio-detail-img3-one.jpg" alt="Yeni Nesil Medya Resmi" class="nesil-medya-resim" id="image3" width="280px" height="250px">
-		</div>
-		<div class="reklam-right">
-            <div>
-			<h5 class="reklam-yazi">Yeni Nesil Medya</h5>
-			
-			<div id="flip">
-				<div><div>Planlama</div></div>
-				<div><div>Satınalma</div></div>
-			</div>
-			<div class="contact">
-			<a href="iletisim.html"><button id="button-contact">İLETİŞİM</button></a>
-		</div>
+        <div class="content" id="anasayfa-content">
+            <div id="container">
+                <img src="./images/banner-mob-one.jpg" alt="Yeni Nesil Medya Resmi" class="nesil-medya-resim" id="image1" width="280px" height="250px">
+                <img src="./images/portfolio-detail-img1-one.jpg" alt="Yeni Nesil Medya Resmi" class="nesil-medya-resim" id="image2" width="280px" height="250px">
+                <img src="./images/portfolio-detail-img3-one.jpg" alt="Yeni Nesil Medya Resmi" class="nesil-medya-resim" id="image3" width="280px" height="250px">
+            </div>
+            <div class="reklam-right">
+                <div>
+                    <h5 class="reklam-yazi">Yeni Nesil Medya</h5>
+                    <div id="flip">
+                        <div><div>Planlama</div></div>
+                        <div><div>Satınalma</div></div>
+                    </div>
+                    <div class="contact">
+                        <a href="./pages/iletisim.html"><button id="button-contact">İLETİŞİM</button></a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
-        
-		</div>
-		
-	</div>
-    <div class="video-container">
-        <video class="video1" width="320" height="240" controls>
-            <source src="./video/video1.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-    </div>     
+        <div class="video-container">
+            <video class="video1" width="320" height="240" controls>
+                <source src="./video/video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <img id="header-icon" src="./animation-images/Blur_1.png"  alt="">
+        </div>
+        <!-- İkon Konteyneri -->
+        <div class="icon-container">
+            <div class="icon"><i class="fas fa-star"></i></div>
+            <div class="icon"><i class="fas fa-heart"></i></div>
+            <div class="icon"><i class="fas fa-sun"></i></div>
+        </div>
     </nav>
     <div id="about">
         <div class="about-image">
@@ -101,21 +116,26 @@
         <h1 id="services-right-h">Medya Planlama Ve Satın Alma</h1>
       <div class="services-container">
         <div class="media-plan">
-            <img class="service-icon1" src="./images/41--service-icon2-one.png" alt="">
+            <img class="service-icon1" id="service-icon1-1" src="./images/41--service-icon2-one.png"  alt="">
+            <img class="service-icon2" src="./animation-images/service-icon-bg-one.png" alt="">
             <h4 id="media-h">Medya Planlama</h4>
             <p id="media-p">Özel hazırladığımız strateji doğrultusunda markanıza en uygun medya planlama hizmetini sunuyoruz.</p>
         </div>
         <div class="performans-pazarlama">
-            <img class="service-icon1" src="./images/41--service-icon2-one.png" alt="">
+            <img class="service-icon1" id="service-icon1-2" src="./images/41--service-icon2-one.png" alt="">
+            <img class="service-icon2" src="./animation-images/service-icon-bg-one.png" alt="">
             <h4 id="media-h">Performans Pazarlama</h4>
             <p id="media-p">Performans pazarlama hizmetlerimiz en hızlı dönüşleri alacağınız arama dizisini ve sosyal medyalarda bütün kampanya yönetimi</p>
         </div>
         <div class="büyük-veri-pazarlama">
-            <img class="service-icon1" src="./images/41--service-icon2-one.png" alt="">
+            <img class="service-icon1" id="service-icon1-3" src="./images/41--service-icon2-one.png" alt="">
+            <img class="service-icon2" src="./animation-images/service-icon-bg-one.png" alt="">
             <h4 id="media-h">Büyük Veri Pazarlaması</h4>
             <p id="media-p">Tima Medya‘nın kendini rakiplerinden ayrıştırdığı en önemli konu ise belki de Büyük Veri başlığında ki tecrübe ve bilgi büyüklüğüdür.</p>
         </div>
-        <div class="programatik"><img class="service-icon2" src="./images/41--service-icon2-one.png" alt="">
+        <div class="programatik">
+            <img class="service-icon1" id="service-icon1-4" src="./images/41--service-icon2-one.png" alt="">
+            <img class="service-icon2" src="./animation-images/service-icon-bg-one.png" alt="">
             <h4 id="media-h">Programatik</h4>
             <p id="media-p">9 yıla dayanan süredir programatik reklam satın almada uzman ve Türkiye’de programatik reklamcılığın temellerini atmış bir birlik ile data hedefli akıllı reklam hizmetleri sunuyoruz. </p></div>
       </div>        
@@ -124,7 +144,7 @@
     <div class="ara-reklam">
         <div class="icerik">
        <h1 id="reklam-right">Uygun teklifler ve destek için bizimle iletişime geçin</h1>
-       <a href="iletisim.html"><button id="reklam-button">BİZİMLE İLETİŞİME GEÇİN</button></a>
+       <a href="./pages/iletisim.html"><button id="reklam-button">BİZİMLE İLETİŞİME GEÇİN</button></a>
     </div>
     </div>
     

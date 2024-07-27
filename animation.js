@@ -31,3 +31,23 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
 }
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.media-plan, .performans-pazarlama, .büyük-veri-pazarlama, .programatik');
+
+    function checkVisibility() {
+        const viewportHeight = window.innerHeight;
+
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+
+            // Eğer element görünürse `visible` sınıfını ekle
+            if (elementTop < viewportHeight) {
+                element.classList.add('visible');
+            }
+        });
+    }
+
+    // Sayfa yüklendiğinde ve kaydırıldığında kontrol et
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Sayfa ilk yüklendiğinde kontrol et
+});
