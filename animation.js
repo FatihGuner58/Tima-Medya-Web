@@ -1,4 +1,3 @@
-// Sayfa yüklendiğinde animasyonları başlat
 document.addEventListener("DOMContentLoaded", function() {
     animateAboutContent();
 });

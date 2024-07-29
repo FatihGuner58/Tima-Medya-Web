@@ -2,6 +2,9 @@ body {
     margin-top: 60px; 
 }
 .kurumsal-title{
+    background-image: url(../animation-images/Blur_2.png);
+    background-size: 400px;
+    background-position-y:300px ;
     height:150px ;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -133,4 +136,31 @@ header {
 .vizyon-title, .misyon-title {
     animation: bounce 1s infinite;
     margin-bottom: 20px;
+}.footer3{
+    background-color:#173251;
+    margin-top: -30px;
+}
+.footer3, .haklar-write{
+    color: white;
+}
+.footer3, .haklar-sözlesme{
+    text-align: right;
+}
+.footer3 p{
+    text-align: center;
+}
+
+.footer3 a{
+    font: optional;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    list-style-type:armenian;
+}
+.footer3 a:hover{
+    color: #0056b3;
+}
+
+.footer3giz-söz{
+    margin-left: 50px;
 }

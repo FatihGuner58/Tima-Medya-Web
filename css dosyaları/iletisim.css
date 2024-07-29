@@ -16,6 +16,9 @@ header {
 }
 
 .hizmetler-title{
+    background-image: url(../animation-images/Blur_2.png);
+    background-size: 400px;
+    background-position-y:300px ;
     height:150px ;
     text-align: center;
     color: rgb(255, 255, 255);
@@ -47,9 +50,12 @@ header {
 /* İletişim Formu */
 .iletisim-right {
     padding: 20px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .iletisim-title h1 {
+    margin-left: 120px;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -57,6 +63,8 @@ header {
 .iletisim-inputs {
     display: flex;
     flex-direction: column;
+    width: 100½;
+    padding-right: 100px;
 }
 
 .input-group {
@@ -100,6 +108,15 @@ header {
         width: 100%;
     }
 }
+#iletisim-write{
+    font-size: 58px;
+    color:#6a5656;
+}
+@media (max-width: 685px) {
+    #iletisim-write{
+        font-size: 40px;
+    }
+}
 #konum{
     padding-left: 80px;
     padding-top: 20px;
@@ -129,10 +146,24 @@ header {
     font-weight: bold;
     font-size: 45px;
 }
+@media (max-width: 1240px) {
+    .iletisim-right{
+        flex-direction: column;
+    }
+    .iletisim-inputs{
+        padding: 0;
+    }
+    #iletisim-write{
+        padding: 0;
+        margin: 0;
+        margin-bottom: 50px;
+    }
+}
 @media (max-width: 980px) {
     .iletisim-container {
         flex-direction: column;
         align-items: center; 
+        
     }
 
     .iletisim-konum {
@@ -149,41 +180,54 @@ header {
     } 
 }
 #input{
-    border-radius: 15px;
+    border: #ddd;
+    border-radius: 10px;
+    height: 50px;
 }
 .iletisim-title{
     text-align: center;
 }
-#iletisim-write{
-    font-size: 35px;
-}
+
 .iletisim-bilgiler {
-    background-color: #f4f4f4; 
-    padding: 30px; 
-    border-radius: 10px; 
-    max-width: 100½; 
-    margin: 0 auto; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    
-}
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
 
 
-#iletisim-yazi {
-    font-size: 28px;
-    color: #333;
-    text-align: center; 
-    margin-bottom: 20px; 
-}
+  #iletisim-yazi {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
 
-.contact-item {
-    display: flex; 
-    align-items: center; 
-    margin-bottom: 20px; 
-    padding: 10px; 
-    border-radius: 8px; 
-    background-color: #fff; 
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-}
+  
+  .iletisim-bilgiler {
+    max-width: 800px;
+    margin-left: 150px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #iletisim-yazi {
+    text-align: center;
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 30px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
 
 
 .contact-item svg {
@@ -203,4 +247,39 @@ header {
 .contact-item strong {
     color: #333; 
 }
+.contact-item:last-child {
+    border-bottom: none;
+  }
+/* Hover efekti */
+.contact-item:hover {
+    background-color: #f9f9f9;
+    transition: background-color 0.3s ease;
+  }
+  .footer3{
+    background-color:#173251;
+    margin-top: -30px;
+}
+.footer3, .haklar-write{
+    color: white;
+}
+.footer3, .haklar-sözlesme{
+    text-align: right;
+}
+.footer3 p{
+    text-align: center;
+}
 
+.footer3 a{
+    font: optional;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+    list-style-type:armenian;
+}
+.footer3 a:hover{
+    color: #0056b3;
+}
+
+.footer3giz-söz{
+    margin-left: 50px;
+}
