@@ -32,10 +32,10 @@
       <!-- Menü Listesi -->
       <div class="menu-list">
           <ul>
-              <li><a href="../index.html" id="anasayfa-link">Anasayfa</a></li>
-              <li><a href="kurumsal.html" id="kurumsal-link">Kurumsal</a></li>
-              <li><a href="hizmetler.html" id="hizmetler-link">Hizmetler</a></li>
-              <li><a href="iletisim.html" id="iletisim-link">İletişim</a></li>
+              <li><a href="../index.html" id="anasayfa-link" data-tr="Anasayfa" data-en="Home" data-fr="D'accueil">Anasayfa</a></li>
+              <li><a href="kurumsal.html" id="kurumsal-link" data-tr="Kurumsal" data-en="İnstitutional" data-fr="İnstitutionnel">Kurumsal</a></li>
+              <li><a href="hizmetler.html" id="hizmetler-link" data-tr="Hizmetler" data-en="Services" data-fr="Prestations">Hizmetler</a></li>
+              <li><a href="iletisim.html" id="iletisim-link" data-tr="İletişim" data-en="Communication" data-fr="Communication">İletişim</a></li>
               <li><a href="#" id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                 </svg></a></li>
@@ -46,52 +46,52 @@
                       </svg>
                   </a>
                  
-                  <div class="dropdown-menu">
-                      <a href="#">İngilizce</a>
-                      <a href="#">Türkçe</a>
-                      <a href="#">Fransızca</a>
-                  </div>
+                  <div class="dropdown-menu" id="language-selector">
+                    <button data-lang="en">İngilizce</button>
+                    <button data-lang="tr">Türkçe</button>
+                    <button data-lang="fr">Fransızca</button>
+                </div>
               </li>
           </ul>
       </div>
   </header>
     
     <div class="hizmetler-title">
-        <h1 id="hizmetler-right">Hizmetler</h1>
+        <h1 id="hizmetler-right" data-tr="Hizmetler" data-en="Services" data-fr="Prestations" >Hizmetler</h1>
     </div>
 
     <div class="hizmetler-container">
         <div class="hizmetler-item">
             <img id="icon" src="../icons/222--tvreklam.webp" alt="">
-            <p id="hizmetler-p">Televizyon Reklamları</p>
+            <p id="hizmetler-p" data-tr="Televizyon Reklamları" data-en="Television Advertisements" data-fr="Publicités télévisées">Televizyon Reklamları</p>
           </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/247--medya-planlama.webp" alt="">
-          <p id="hizmetler-p">Medya Planlama</p>
+          <p id="hizmetler-p" data-tr="Medya Planlama" data-en="media planning" data-fr="planification média">Medya Planlama</p>
         </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/13--programatik.jpg" alt="">
-          <p id="hizmetler-p">Programatik</p>
+          <p id="hizmetler-p" data-tr="Programatik" data-en="programmatic" data-fr="programmatique">Programatik</p>
         </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/491--bigdata.webp" alt="">
-          <p id="hizmetler-p">Büyük Veri Pazarlaması</p>
+          <p id="hizmetler-p" data-tr="Büyük Veri Pazarlaması" data-en="Big Data Marketing" data-fr="Marketing des mégadonnées">Büyük Veri Pazarlaması</p>
         </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/631--radyogercekci.webp" alt="">
-          <p id="hizmetler-p">Radyo Reklamları</p>
+          <p id="hizmetler-p" data-tr="Radyo Reklamları" data-en="Radio Ads" data-fr="Annonces radio">Radyo Reklamları</p>
         </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/674--reklam.webp" alt="">
-          <p id="hizmetler-p">Programatik Açık Hava Reklamları</p>
+          <p id="hizmetler-p" data-tr="Programatik Açık Hava Reklamları" data-en="Programmatic Outdoor Advertising" data-fr="Publicité extérieure programmatique">Programatik Açık Hava Reklamları</p>
         </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/921--66263.jpg" alt="">
-          <p id="hizmetler-p">Performans Pazarlama</p>
+          <p id="hizmetler-p" data-tr="Performans Pazarlama" data-en="performance marketing" data-fr="marketing à la performance">Performans Pazarlama</p>
         </div>
         <div class="hizmetler-item">
           <img id="icon" src="../icons/222--tvreklam.webp" alt="">
-          <p id="hizmetler-p">Televizyon Reklamları</p>
+          <p id="hizmetler-p" data-tr="Televizyon Reklamları" data-en="Television Advertisements" data-fr="Publicités télévisées">Televizyon Reklamları</p>
         </div>
         
     </div>
@@ -104,14 +104,14 @@
       </div>
       
       <div class="footer2">
-          <h2 id="footer-hizmet">HİZMETLERİMİZ</h2>
-          <p class="footer-hizmet-right">Medya Planlama</p>
-          <p class="footer-hizmet-right">Performans Pazarlama</p>
-          <p class="footer-hizmet-right">Büyük Veri Pazarlaması</p>
-          <p class="footer-hizmet-right">Programatik</p>
+        <h2 id="footer-hizmet" data-tr="HİZMETLERİMİZ" data-en="OUR SERVICES" data-fr="NOS SERVICES">HİZMETLERİMİZ</h2>
+        <p class="footer-hizmet-right" data-tr="Medya Planlama" data-en="media planning" data-fr="planification média">Medya Planlama</p>
+        <p class="footer-hizmet-right" data-tr="Performans Pazarlama" data-en="performance marketing" data-fr="marketing à la performance">Performans Pazarlama</p>
+        <p class="footer-hizmet-right" data-tr="Büyük Veri Pazarlaması" data-en="Big Data Marketing" data-fr="Marketing des mégadonnées">Büyük Veri Pazarlaması</p>
+        <p class="footer-hizmet-right" data-tr="Programatik" data-en="programmatic" data-fr="programmatique">Programatik</p>
       </div>
       <div class="footer-iletisim">
-          <h2>İletişim</h2>
+        <h2 data-tr="İletişim" data-en="Communication" data-fr="Communication">İletişim</h2>
           <div class="icons">
           <div class="location-container">
               <div class="location-image"><svg id="location-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -154,7 +154,6 @@
                 </svg></a>
               </div>
       </div>
-      
   </div>
   </footer>
   <div class="footer3">
@@ -163,11 +162,12 @@
      <p id="haklar-write">Copyright © 2022 Web Tasarım All rights reserved.</p>
  </div>
  <div class="footer3giz-söz">
-     <a id="footer2gizlilik" href="#">Gizlilik politikasi</a>
-     <a id="footer2sözlesme" href="#">Kullanıcı Sözleşmesi</a>
- </div>
+  <a id="footer2gizlilik" href="#" data-tr="Gizlilik politikası" data-en="Privacy Policy" data-fr="politique de confidentialité">Gizlilik politikası</a>
+  <a id="footer2sözlesme" href="#" data-tr="Kullanıcı Sözleşmesi" data-en="user agreement" data-fr="Accord de l'utilisateur">Kullanıcı Sözleşmesi</a>
+</div>
  </div>
     <script src="../script.js"></script>
+    <script src="../language.js"></script>
     <script>
        document.addEventListener('DOMContentLoaded', function() {
         const items = document.querySelectorAll('.hizmetler-item');

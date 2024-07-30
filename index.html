@@ -33,10 +33,10 @@
         <!-- Menü Listesi -->
         <div class="menu-list">
             <ul>
-                <li><a href="index.html" id="anasayfa-link">Anasayfa</a></li>
-                <li><a href="./pages/kurumsal.html" id="kurumsal-link">Kurumsal</a></li>
-                <li><a href="./pages/hizmetler.html" id="hizmetler-link">Hizmetler</a></li>
-                <li><a href="./pages/iletisim.html" id="iletisim-link">İletişim</a></li>
+                <li><a href="index.html" data-tr="Anasayfa" data-en="Home" data-fr="D'accueil" id="anasayfa-link">Anasayfa</a></li>
+                <li><a href="./pages/kurumsal.html" data-tr="Kurumsal" data-en="İnstitutional" data-fr="İnstitutionnel" id="kurumsal-link">Kurumsal</a></li>
+                <li><a href="./pages/hizmetler.html" data-tr="Hizmetler" data-en="Services" data-fr="Prestations" id="hizmetler-link">Hizmetler</a></li>
+                <li><a href="./pages/iletisim.html" data-tr="İletişim" data-en="Communication" data-fr="Communication" id="iletisim-link">İletişim</a></li>
                 <li>
                     <a href="#" id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                         <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -48,10 +48,10 @@
                             <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z"/>
                         </svg>
                     </a>
-                    <div class="dropdown-menu">
-                        <a href="#">İngilizce</a>
-                        <a href="#">Türkçe</a>
-                        <a href="#">Fransızca</a>
+                    <div class="dropdown-menu" id="language-selector">
+                        <button data-lang="en">İngilizce</button>
+                        <button data-lang="tr">Türkçe</button>
+                        <button data-lang="fr">Fransızca</button>
                     </div>
                 </li>
             </ul>
@@ -81,13 +81,13 @@
             </div>
             <div class="reklam-right">
                 <div>
-                    <h5 class="reklam-yazi">Yeni Nesil Medya</h5>
+                    <h5 class="reklam-yazi"data-tr="Yeni Nesil Medya" data-en="New generation media" data-fr="Médias nouvelle génération">Yeni Nesil Medya</h5>
                     <div id="flip">
-                        <div><div>Planlama</div></div>
-                        <div><div>Satınalma</div></div>
+                        <div><div data-tr="Planlama" data-en="Planning" data-fr="Planification">Planlama</div></div>
+                        <div><div data-tr="Satınalma" data-en="Buy" data-fr="Acheter">Satınalma</div></div>
                     </div>
                     <div class="contact">
-                        <a href="./pages/iletisim.html"><button id="button-contact">İLETİŞİM</button></a>
+                        <a href="./pages/iletisim.html"><button id="button-contact" data-tr="İletişim" data-en="Communication" data-fr="Communication" >İLETİŞİM</button></a>
                     </div>
                     
                 </div>
@@ -106,61 +106,61 @@
             <img class="about-image1" src="./images/918--about-img-one1.png" alt="">
         </div>
         <div class="about-right">
-            <h1>Biz Kimiz ?</h1>
-            <p class="about-p">2013'te kurulduk. Ortaköy'deki şirket binamızda outdoor reklamcılık ve </p>
-            <p class="about-p">yapımcılık başta olmak üzere çeşitli ajans hizmetleri veriyoruz.</p>
+            <h1 data-tr="Biz Kimiz ?" data-en="Who are we ?" data-fr="Qui sommes ?">Biz Kimiz ?</h1>
+            <p class="about-p" data-tr="2013'te kurulduk. Ortaköy'deki şirket binamızda outdoor reklamcılık ve " data-en="We were founded in 2013. Outdoor advertising and advertising in our company building in Ortaköy. ?" data-fr="Nous avons été fondés en 2013. Publicité extérieure et publicité dans le bâtiment de notre entreprise à Ortaköy.">2013'te kurulduk. Ortaköy'deki şirket binamızda outdoor reklamcılık ve </p>
+            <p class="about-p" data-tr="yapımcılık başta olmak üzere çeşitli ajans hizmetleri veriyoruz." data-en="We provide various agency services, especially production." data-fr="Nous fournissons divers services d'agence, notamment de production.">yapımcılık başta olmak üzere çeşitli ajans hizmetleri veriyoruz.</p>
             <br>
-            <p class="about-p">Sanal âlem giderek gerçek âleme dönüşüyor. Sosyal medya yeni dünya </p>
-            <p>düzeninin pilot uygulaması dense yeridir. Böyle devrim dönemlerinde kalıplar </p>
-            <p>yıkılır, fırsatlar doğar. Kalıpların sahibi devlerin ayakları kayar, fırsatları </p>
-            <p>değerlendiren cücelerin kanatları çıkar.</p>
+            <p class="about-p" data-tr="Sanal âlem giderek gerçek âleme dönüşüyor. Sosyal medya yeni dünya" data-en="The virtual world is gradually turning into the real world. Social media is the new world" data-fr="Le monde virtuel se transforme progressivement en monde réel. Les réseaux sociaux sont le nouveau monde">Sanal âlem giderek gerçek âleme dönüşüyor. Sosyal medya yeni dünya </p>
+            <p data-tr="düzeninin pilot uygulaması dense yeridir. Böyle devrim dönemlerinde kalıplar" data-en="The pilot application of the scheme is worth mentioning. Patterns in such revolutionary periods" data-fr="L’application pilote du programme mérite d’être mentionnée. Modèles dans ces périodes révolutionnaires">düzeninin pilot uygulaması dense yeridir. Böyle devrim dönemlerinde kalıplar </p>
+            <p data-tr="yıkılır, fırsatlar doğar. Kalıpların sahibi devlerin ayakları kayar, fırsatları" data-en="collapse, opportunities arise. The feet of the giants who own the patterns slip, their opportunities" data-fr="l’effondrement, des opportunités se présentent. Les pieds des géants propriétaires des modèles glissent, leurs opportunités">yıkılır, fırsatlar doğar. Kalıpların sahibi devlerin ayakları kayar, fırsatları </p>
+            <p data-tr="değerlendiren cücelerin kanatları çıkar." data-en="The evaluating dwarfs grow wings." data-fr="Les nains évaluateurs ont des ailes.">değerlendiren cücelerin kanatları çıkar.</p>
             <br>
-            <p class="about-p">Türkiye fırsatları değerlendiriyor. Biz de ülkemizin potansiyeliyle medya </p>
-            <p>sektörü üzerinden birleşmek için yola çıktık. Yeniliklerle büyümeye, büyütmeyep </p>
-            <p> başladık. </p>
+            <p class="about-p" data-tr="Türkiye fırsatları değerlendiriyor. Biz de ülkemizin potansiyeliyle medya" data-en="Türkiye is evaluating opportunities. We are also a media player with the potential of our country." data-fr="Türkiye évalue les opportunités. Nous sommes aussi un acteur médiatique avec le potentiel de notre pays.">Türkiye fırsatları değerlendiriyor. Biz de ülkemizin potansiyeliyle medya </p>
+            <p data-tr="Sektör genelinde birleşmeye karar verdik. Yenilikler sayesinde büyümek ve genişlemek" data-en="We decided to merge industry-wide. Growing and expanding through innovations" data-fr="Nous avons décidé de fusionner l’ensemble du secteur. Croissance et expansion grâce aux innovations">sektörü üzerinden birleşmek için yola çıktık. Yeniliklerle büyümeye, büyütmeye </p>
+            <p data-tr="başladık." data-en="we started." data-fr="nous avons commencé"> başladık. </p>
         </div>
     </div>
     
     <div class="services">
-        <p id="sevices-right-p">HİZMETLERİMİZ</p>
-        <h1 id="services-right-h">Medya Planlama Ve Satın Alma</h1>
+        <p id="sevices-right-p" data-tr="HİZMETLERİMİZ" data-en="OUR SERVICES" data-fr="NOS SERVICES">HİZMETLERİMİZ</p>
+        <h1 id="services-right-h" data-tr="Medya Planlama Ve Satın Alma" data-en="Media Planning and Buying" data-fr="Planification et achat média">Medya Planlama Ve Satın Alma</h1>
       <div class="services-container">
-        <div class="media-plan">
+        <div class="media-plan" id="media-plan">
             <img class="service-icon1" id="service-icon1-1" src="./images/41--service-icon2-one.png"  alt="">
             <img class="service-icon2" id="service-icon2-icerik1" src="./animation-images/service-icon-bg-one.png" alt="">
-            <h4 id="media-h">Medya Planlama</h4>
-            <p id="media-p">Özel hazırladığımız strateji doğrultusunda markanıza en uygun medya planlama hizmetini sunuyoruz.</p>
+            <h4 id="media-h" data-tr="Medya Planlama" data-en="Media Planning" data-fr="Planification des médias">Medya Planlama</h4>
+            <p id="media-p" data-tr="Özel hazırladığımız strateji doğrultusunda markanıza en uygun medya planlama hizmetini sunuyoruz." data-en="We offer the most suitable media planning service for your brand in line with the strategy we have specially prepared." data-fr="Nous proposons le service de plan média le plus adapté à votre marque en accord avec la stratégie que nous avons spécialement préparée.">Özel hazırladığımız strateji doğrultusunda markanıza en uygun medya planlama hizmetini sunuyoruz.</p>
         </div>
-        <div class="performans-pazarlama">
+        <div class="performans-pazarlama" id="performans-pazarlama">
             <img class="service-icon1" id="service-icon1-2" src="./images/41--service-icon2-one.png" alt="">
             <img class="service-icon2" id="service-icon2-icerik2" src="./animation-images/service-icon-bg-one.png" alt="">
-            <h4 id="media-h">Performans Pazarlama</h4>
-            <p id="media-p">Performans pazarlama hizmetlerimiz en hızlı dönüşleri alacağınız arama dizisini ve sosyal medyalarda bütün kampanya yönetimi</p>
+            <h4 id="media-h" data-tr="Performans Pazarlama" data-en="performance marketing" data-fr="marketing à la performance">Performans Pazarlama</h4>
+            <p id="media-p" data-tr="Performans pazarlama hizmetlerimiz en hızlı dönüşleri alacağınız arama dizisini ve sosyal medyalarda bütün kampanya yönetimi" data-en="Our performance marketing services include the search string where you will get the fastest returns and all campaign management on social media." data-fr="Nos services de marketing à la performance incluent la chaîne de recherche où vous obtiendrez les retours les plus rapides et toute la gestion des campagnes sur les réseaux sociaux.">Performans pazarlama hizmetlerimiz en hızlı dönüşleri alacağınız arama dizisini ve sosyal medyalarda bütün kampanya yönetimi</p>
         </div>
-        <div class="büyük-veri-pazarlama">
+        <div class="büyük-veri-pazarlama" id="büyük-veri-pazarlama">
             <img class="service-icon1" id="service-icon1-3" src="./images/41--service-icon2-one.png" alt="">
             <img class="service-icon2" id="service-icon2-icerik-3" src="./animation-images/service-icon-bg-one.png" alt="">
-            <h4 id="media-h">Büyük Veri Pazarlaması</h4>
-            <p id="media-p">Tima Medya‘nın kendini rakiplerinden ayrıştırdığı en önemli konu ise belki de Büyük Veri başlığında ki tecrübe ve bilgi büyüklüğüdür.</p>
+            <h4 id="media-h" data-tr="Büyük Veri Pazarlaması" data-en="Big Data Marketing" data-fr="Marketing des mégadonnées">Büyük Veri Pazarlaması</h4>
+            <p id="media-p" data-tr="Tima Medya‘nın kendini rakiplerinden ayrıştırdığı en önemli konu ise belki de Büyük Veri başlığında ki tecrübe ve bilgi büyüklüğüdür." data-en="Perhaps the most important issue that distinguishes Tima Medya from its competitors is its experience and knowledge in the field of Big Data." data-fr="Perhaps the most important issue that distinguishes Tima Medya from its competitors is its experience and knowledge in the field of Big Data.">Tima Medya‘nın kendini rakiplerinden ayrıştırdığı en önemli konu ise belki de Büyük Veri başlığında ki tecrübe ve bilgi büyüklüğüdür.</p>
         </div>
-        <div class="programatik">
+        <div class="programatik" id="programatik">
             <img class="service-icon1" id="service-icon1-4" src="./images/41--service-icon2-one.png" alt="">
             <img class="service-icon2" id="service-icon2-icerik-4" src="./animation-images/service-icon-bg-one.png" alt="">
-            <h4 id="media-h">Programatik</h4>
-            <p id="media-p">9 yıla dayanan süredir programatik reklam satın almada uzman ve Türkiye’de programatik reklamcılığın temellerini atmış bir birlik ile data hedefli akıllı reklam hizmetleri sunuyoruz. </p></div>
+            <h4 id="media-h" data-tr="Programatik" data-en="programmatic" data-fr="programmatique">Programatik</h4>
+            <p id="media-p" data-tr="9 yıla dayanan süredir programatik reklam satın almada uzman ve Türkiye’de programatik reklamcılığın temellerini atmış bir birlik ile data hedefli akıllı reklam hizmetleri sunuyoruz." data-en="We have been offering data-targeted smart advertising services with an association that has been expert in programmatic advertising purchasing for 9 years and has laid the foundations of programmatic advertising in Turkey." data-fr="Nous proposons des services de publicité intelligente ciblés sur les données avec une association experte en achat de publicité programmatique depuis 9 ans et qui a posé les bases de la publicité programmatique en Turquie.">9 yıla dayanan süredir programatik reklam satın almada uzman ve Türkiye’de programatik reklamcılığın temellerini atmış bir birlik ile data hedefli akıllı reklam hizmetleri sunuyoruz. </p></div>
       </div>        
     </div>
     
     <div class="ara-reklam">
         <div class="icerik">
-       <h1 id="reklam-right">Uygun teklifler ve destek için bizimle iletişime geçin</h1>
-       <a href="./pages/iletisim.html"><button id="reklam-button">BİZİMLE İLETİŞİME GEÇİN</button></a>
+       <h1 id="reklam-right" data-tr="Uygun teklifler ve destek için bizimle iletişime geçin" data-en="Contact us for affordable offers and support" data-fr="Contactez-nous pour des offres abordables et une assistance">Uygun teklifler ve destek için bizimle iletişime geçin</h1>
+       <a href="./pages/iletisim.html"><button id="reklam-button" data-tr="BİZİMLE İLETİŞİME GEÇİN" data-en="CONTACT US" data-fr="CONTACT US">BİZİMLE İLETİŞİME GEÇİN</button></a>
     </div>
     </div>
     
     <div class="references">
         <br>
-        <h1 id="references-title">Referanslar</h1>
+        <h1 id="references-title" data-tr="Referanslar" data-en="References" data-fr="Les références">Referanslar</h1>
         <br>
         <div class="images">
             <img id="references-image" src="./logolar/63--kayi-tv.png" alt="">
@@ -188,14 +188,14 @@
         </div>
         
         <div class="footer2">
-            <h2 id="footer-hizmet">HİZMETLERİMİZ</h2>
-            <p class="footer-hizmet-right">Medya Planlama</p>
-            <p class="footer-hizmet-right">Performans Pazarlama</p>
-            <p class="footer-hizmet-right">Büyük Veri Pazarlaması</p>
-            <p class="footer-hizmet-right">Programatik</p>
+            <h2 id="footer-hizmet" data-tr="HİZMETLERİMİZ" data-en="OUR SERVICES" data-fr="NOS SERVICES">HİZMETLERİMİZ</h2>
+            <p class="footer-hizmet-right" data-tr="Medya Planlama" data-en="media planning" data-fr="planification média">Medya Planlama</p>
+            <p class="footer-hizmet-right" data-tr="Performans Pazarlama" data-en="performance marketing" data-fr="marketing à la performance">Performans Pazarlama</p>
+            <p class="footer-hizmet-right" data-tr="Büyük Veri Pazarlaması" data-en="Big Data Marketing" data-fr="Marketing des mégadonnées">Büyük Veri Pazarlaması</p>
+            <p class="footer-hizmet-right" data-tr="Programatik" data-en="programmatic" data-fr="programmatique">Programatik</p>
         </div>
         <div class="footer-iletisim">
-            <h2>İletişim</h2>
+            <h2 data-tr="İletişim" data-en="Communication" data-fr="Communication">İletişim</h2>
             <div class="icons">
             <div class="location-container">
                 <div class="location-image"><svg id="location-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -247,13 +247,14 @@
         <p id="haklar-write">Copyright © 2022 Web Tasarım All rights reserved.</p>
     </div>
     <div class="footer3giz-söz">
-        <a id="footer2gizlilik" href="#">Gizlilik politikasi</a>
-        <a id="footer2sözlesme" href="#">Kullanıcı Sözleşmesi</a>
+        <a id="footer2gizlilik" href="#" data-tr="Gizlilik politikası" data-en="Privacy Policy" data-fr="politique de confidentialité">Gizlilik politikası</a>
+        <a id="footer2sözlesme" href="#" data-tr="Kullanıcı Sözleşmesi" data-en="user agreement" data-fr="Accord de l'utilisateur">Kullanıcı Sözleşmesi</a>
     </div>
     </div>
     <script src="script.js"></script>
     <script src="animation.js"></script>
     <script src="search.js"></script>
+    <script src="language.js"></script>
     <script>
         let slideIndex = 0;
 

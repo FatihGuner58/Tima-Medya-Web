@@ -36,10 +36,10 @@
         <!-- Menü Listesi -->
         <div class="menu-list">
             <ul>
-                <li><a href="../index.html" id="anasayfa-link">Anasayfa</a></li>
-                <li><a href="kurumsal.html" id="kurumsal-link">Kurumsal</a></li>
-                <li><a href="hizmetler.html" id="hizmetler-link">Hizmetler</a></li>
-                <li><a href="iletisim.html" id="iletisim-link">İletişim</a></li>
+              <li><a href="../index.html" id="anasayfa-link" data-tr="Anasayfa" data-en="Home" data-fr="D'accueil">Anasayfa</a></li>
+              <li><a href="kurumsal.html" id="kurumsal-link" data-tr="Kurumsal" data-en="İnstitutional" data-fr="İnstitutionnel">Kurumsal</a></li>
+              <li><a href="hizmetler.html" id="hizmetler-link" data-tr="Hizmetler" data-en="Services" data-fr="Prestations">Hizmetler</a></li>
+              <li><a href="iletisim.html" id="iletisim-link" data-tr="İletişim" data-en="Communication" data-fr="Communication">İletişim</a></li>
                 <li><a href="#" id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg></a></li>
@@ -50,11 +50,11 @@
                         </svg>
                     </a>
                     
-                    <div class="dropdown-menu">
-                        <a href="#">İngilizce</a>
-                        <a href="#">Türkçe</a>
-                        <a href="#">Fransızca</a>
-                    </div>
+                    <div class="dropdown-menu" id="language-selector">
+                      <button data-lang="en">İngilizce</button>
+                      <button data-lang="tr">Türkçe</button>
+                      <button data-lang="fr">Fransızca</button>
+                  </div>
                 </li>
             </ul>
         </div>
@@ -184,6 +184,7 @@
        <a id="footer2sözlesme" href="#">Kullanıcı Sözleşmesi</a>
    </div>
    </div>
+   <script src="../language.js"></script>
     <script src="../script.js"></script>
 </body>
 </html>

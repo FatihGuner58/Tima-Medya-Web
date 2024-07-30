@@ -32,10 +32,10 @@
         <!-- Menü Listesi -->
         <div class="menu-list">
             <ul>
-                <li><a href="../index.html" id="anasayfa-link">Anasayfa</a></li>
-                <li><a href="kurumsal.html" id="kurumsal-link">Kurumsal</a></li>
-                <li><a href="hizmetler.html" id="hizmetler-link">Hizmetler</a></li>
-                <li><a href="iletisim.html" id="iletisim-link">İletişim</a></li>
+              <li><a href="../index.html" id="anasayfa-link" data-tr="Anasayfa" data-en="Home" data-fr="D'accueil">Anasayfa</a></li>
+              <li><a href="kurumsal.html" id="kurumsal-link" data-tr="Kurumsal" data-en="İnstitutional" data-fr="İnstitutionnel">Kurumsal</a></li>
+              <li><a href="hizmetler.html" id="hizmetler-link" data-tr="Hizmetler" data-en="Services" data-fr="Prestations">Hizmetler</a></li>
+              <li><a href="iletisim.html" id="iletisim-link" data-tr="İletişim" data-en="Communication" data-fr="Communication">İletişim</a></li>
                 <li><a href="#" id="search"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                     <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
                   </svg></a></li>
@@ -46,54 +46,85 @@
                         </svg>
                     </a>
                     
-                    <div class="dropdown-menu">
-                        <a href="#">İngilizce</a>
-                        <a href="#">Türkçe</a>
-                        <a href="#">Fransızca</a>
+                    <div class="dropdown-menu" id="language-selector">
+                        <button data-lang="en">İngilizce</button>
+                        <button data-lang="tr">Türkçe</button>
+                        <button data-lang="fr">Fransızca</button>
                     </div>
                 </li>
             </ul>
         </div>
     </header>
-        <div class="kurumsal-title">KURUMSAL</div>
+        <div class="kurumsal-title" data-tr="Kurumsal" data-en="İnstitutional" data-fr="İnstitutionnel">KURUMSAL</div>
 
         <div id="about">
             <div class="about-image">
                 <img class="about-image1" src="../images/918--about-img-one1.png" alt="">
             </div>
             <div class="about-right">
-                <h1>Biz Kimiz ?</h1>
-                <p class="about-p">2013'te kurulduk. Ortaköy'deki şirket binamızda outdoor reklamcılık ve </p>
-                <p class="about-p">yapımcılık başta olmak üzere çeşitli ajans hizmetleri veriyoruz.</p>
-                <br>
-                <p class="about-p">Sanal âlem giderek gerçek âleme dönüşüyor. Sosyal medya yeni dünya </p>
-                <p>düzeninin pilot uygulaması dense yeridir. Böyle devrim dönemlerinde kalıplar </p>
-                <p>yıkılır, fırsatlar doğar. Kalıpların sahibi devlerin ayakları kayar, fırsatları </p>
-                <p>değerlendiren cücelerin kanatları çıkar.</p>
-                <br>
-                <p class="about-p">Türkiye fırsatları değerlendiriyor. Biz de ülkemizin potansiyeliyle medya </p>
-                <p>sektörü üzerinden birleşmek için yola çıktık. Yeniliklerle büyümeye, büyütmeyep </p>
-                <p> başladık. </p>
+                <h1 data-tr="Biz Kimiz ?" data-en="Who are we ?" data-fr="Qui sommes ?">Biz Kimiz ?</h1>
+            <p class="about-p" data-tr="2013'te kurulduk. Ortaköy'deki şirket binamızda outdoor reklamcılık ve " data-en="We were founded in 2013. Outdoor advertising and advertising in our company building in Ortaköy. ?" data-fr="Nous avons été fondés en 2013. Publicité extérieure et publicité dans le bâtiment de notre entreprise à Ortaköy.">2013'te kurulduk. Ortaköy'deki şirket binamızda outdoor reklamcılık ve </p>
+            <p class="about-p" data-tr="yapımcılık başta olmak üzere çeşitli ajans hizmetleri veriyoruz." data-en="We provide various agency services, especially production." data-fr="Nous fournissons divers services d'agence, notamment de production.">yapımcılık başta olmak üzere çeşitli ajans hizmetleri veriyoruz.</p>
+            <br>
+            <p class="about-p" data-tr="Sanal âlem giderek gerçek âleme dönüşüyor. Sosyal medya yeni dünya" data-en="The virtual world is gradually turning into the real world. Social media is the new world" data-fr="Le monde virtuel se transforme progressivement en monde réel. Les réseaux sociaux sont le nouveau monde">Sanal âlem giderek gerçek âleme dönüşüyor. Sosyal medya yeni dünya </p>
+            <p data-tr="düzeninin pilot uygulaması dense yeridir. Böyle devrim dönemlerinde kalıplar" data-en="The pilot application of the scheme is worth mentioning. Patterns in such revolutionary periods" data-fr="L’application pilote du programme mérite d’être mentionnée. Modèles dans ces périodes révolutionnaires">düzeninin pilot uygulaması dense yeridir. Böyle devrim dönemlerinde kalıplar </p>
+            <p data-tr="yıkılır, fırsatlar doğar. Kalıpların sahibi devlerin ayakları kayar, fırsatları" data-en="collapse, opportunities arise. The feet of the giants who own the patterns slip, their opportunities" data-fr="l’effondrement, des opportunités se présentent. Les pieds des géants propriétaires des modèles glissent, leurs opportunités">yıkılır, fırsatlar doğar. Kalıpların sahibi devlerin ayakları kayar, fırsatları </p>
+            <p data-tr="değerlendiren cücelerin kanatları çıkar." data-en="The evaluating dwarfs grow wings." data-fr="Les nains évaluateurs ont des ailes.">değerlendiren cücelerin kanatları çıkar.</p>
+            <br>
+            <p class="about-p" data-tr="Türkiye fırsatları değerlendiriyor. Biz de ülkemizin potansiyeliyle medya" data-en="Türkiye is evaluating opportunities. We are also a media player with the potential of our country." data-fr="Türkiye évalue les opportunités. Nous sommes aussi un acteur médiatique avec le potentiel de notre pays.">Türkiye fırsatları değerlendiriyor. Biz de ülkemizin potansiyeliyle medya </p>
+            <p data-tr="Sektör genelinde birleşmeye karar verdik. Yenilikler sayesinde büyümek ve genişlemek" data-en="We decided to merge industry-wide. Growing and expanding through innovations" data-fr="Nous avons décidé de fusionner l’ensemble du secteur. Croissance et expansion grâce aux innovations">sektörü üzerinden birleşmek için yola çıktık. Yeniliklerle büyümeye, büyütmeye </p>
+            <p data-tr="başladık." data-en="we started." data-fr="nous avons commencé"> başladık. </p>
             </div>
         </div>
         <div class="ara-reklam">
             <div class="icerik">
-           <h1 id="reklam-right">Uygun teklifler ve destek için bizimle iletişime geçin</h1>
-           <a href="iletisim.html"><button id="reklam-button">BİZİMLE İLETİŞİME GEÇİN</button></a>
+           <h1 id="reklam-right"  data-tr="Uygun teklifler ve destek için bizimle iletişime geçin" data-en="Contact us for affordable offers and support" data-fr="Contactez-nous pour des offres abordables et une assistance">Uygun teklifler ve destek için bizimle iletişime geçin</h1>
+           <a href="iletisim.html"><button id="reklam-button" data-tr="BİZİMLE İLETİŞİME GEÇİN" data-en="CONTACT US" data-fr="CONTACT US">BİZİMLE İLETİŞİME GEÇİN</button></a>
         </div>
         </div>
         <div class="vizyon-misyon-container">
             <div class="vizyon">
-                <div class="vizyon-title"><h1>Vizyonumuz</h1></div>
-                <div class="vizyon-p">
+                <div class="vizyon-title"><h1 data-tr="Vizyonumuz" data-en="our vision" data-fr="notre vision">Vizyonumuz</h1></div>
+                <div class="vizyon-p" 
+                
+                data-tr="Eskiden medya grupları ne derse o olurdu. Milyonlarca dolarlık sermayesi olmayanlar insanlara ulaşamazdı. Ama şimdi sıfır masrafla çekilen amatör bir video beğenilirse bütün dünya tarafından izleniyor. İlgi çekmeyi başaranların önüne hiçbir engel çıkmıyor.
+                Sosyal medya sayesinde artık herkes bir medya patronu. Hepimizin kendi televizyonu, radyosu, gazetesi var. Beğeni yumağıysa bir kanallar, siteler galaksisi kadar karmaşık. Sınırlar kalkıyor, ayırt etmek zorlaşıyor.
+                Eski medya sermayedir, parayı bastırır ve istediğini tanıtır. Yeni medya rehberdir, küreselleşme labirentinde yol buldurur" 
+                
+                data-en="In the past, whatever the media groups said happened. Those who did not have millions of dollars of capital could not reach people. But now, if an amateur video shot with zero expense is liked, it is watched by the whole world. There are no obstacles in the way of those who manage to attract attention.
+                Thanks to social media, everyone is now a media mogul. We all have our own television, radio and newspaper. The ball of likes is as complex as a galaxy of channels and sites. Borders are disappearing, discrimination becomes difficult.
+                The old media is capital, it prints money and promotes what it wants. New media is a guide, it helps you find your way through the labyrinth of globalization" 
+                
+                data-fr="Dans le passé, tout ce que disaient les groupes médiatiques se produisait. Ceux qui ne disposaient pas de millions de dollars de capital ne pouvaient pas atteindre les gens. Mais désormais, si une vidéo amateur tournée sans frais est appréciée, elle est regardée par le monde entier. Il n’y a aucun obstacle sur le chemin de ceux qui parviennent à attirer l’attention.
+                Grâce aux réseaux sociaux, tout le monde est désormais un magnat des médias. Nous avons tous notre propre télévision, radio et journal. La boule des likes est aussi complexe qu’une galaxie de chaînes et de sites. Les frontières disparaissent, les discriminations deviennent difficiles.
+                Les vieux médias sont du capital, ils impriment de l’argent et promeuvent ce qu’ils veulent. Les nouveaux médias sont un guide, ils vous aident à vous frayer un chemin dans le labyrinthe de la mondialisation"
+                >
                     Eskiden medya grupları ne derse o olurdu. Milyonlarca dolarlık sermayesi olmayanlar insanlara ulaşamazdı. Ama şimdi sıfır masrafla çekilen amatör bir video beğenilirse bütün dünya tarafından izleniyor. İlgi çekmeyi başaranların önüne hiçbir engel çıkmıyor.
                     Sosyal medya sayesinde artık herkes bir medya patronu. Hepimizin kendi televizyonu, radyosu, gazetesi var. Beğeni yumağıysa bir kanallar, siteler galaksisi kadar karmaşık. Sınırlar kalkıyor, ayırt etmek zorlaşıyor.
                     Eski medya sermayedir, parayı bastırır ve istediğini tanıtır. Yeni medya rehberdir, küreselleşme labirentinde yol buldurur
                 </div>
             </div>
             <div class="misyon">
-                <div class="misyon-title"><h1>Misyonumuz</h1></div>
-                <div class="misyon-p">
+                <div class="misyon-title"><h1 data-tr="Misyonumuz" data-en="Our Mission" data-fr="Notre mission">Misyonumuz</h1></div>
+                <div class="misyon-p" 
+                data-tr="Eski kalıplardan çok yeni fırsatlara yönelerek medya sektörünü önden takip etmek 
+                Medya grubu denince akla televizyon ve radyo kanallarından, gazetelerden, dergilerden oluşan dev bir aile gelir. Her medya girişimcisinin hayali de böyle bir aileye sahip olmaktır. Ne var ki bu ailenin yeni yuvası multimedya. Artık görüntülü, sesli ve yazılı yayıncılık tek çatı altında.
+                Multimedyanın grafikerleri yeni yeni yetişiyor. Yönetmenleri, editörleri, yazarları ise bulunmaz Hint kumaşı. İnsan kendi ürettiği teknolojinin hızına yetişemiyor. Yeni girişimciler için en prestijli kontenjanlar boşta bekliyor.
+                Eski medya yavaştır, adım adım büyür. Yeni medya esnektir, şartlarla çabuk şekillenir.
+                Eski medya sermayedir, parayı bastırır ve istediğini tanıtır. Yeni medya rehberdir, küreselleşme labirentinde yol buldurur" 
+                
+                data-en="To follow the media industry from the front by turning to new opportunities rather than old patterns
+                When we say media group, a giant family consisting of television and radio channels, newspapers and magazines comes to mind. Every media entrepreneur's dream is to have such a family. However, the new home of this family is multimedia. Now video, audio and written publishing are under one roof.
+                Multimedia graphic designers are just starting to catch up. Its directors, editors and writers are a rare Indian fabric. Man cannot keep up with the speed of the technology he produces. The most prestigious quotas for new entrepreneurs are waiting idle.
+                Old media is slow, it grows step by step. New media is flexible and can be shaped quickly by circumstances.
+                The old media is capital, it prints money and promotes what it wants. New media is a guide, it helps you find your way through the labyrinth of globalization" 
+                
+                data-fr="Suivre l'industrie des médias de front en se tournant vers de nouvelles opportunités plutôt que vers les anciens modèles
+                Quand on parle de groupe de médias, on pense à une famille géante composée de chaînes de télévision et de radio, de journaux et de magazines. Le rêve de tout entrepreneur en médias est d'avoir une telle famille. Cependant, le nouveau foyer de cette famille est le multimédia. Désormais, l'édition vidéo, audio et écrite est regroupée sous un même toit.
+                Les graphistes multimédia commencent tout juste à rattraper leur retard. Ses réalisateurs, rédacteurs et scénaristes constituent un tissu indien rare. L’homme ne peut pas suivre le rythme de la technologie qu’il produit. Les quotas les plus prestigieux pour les nouveaux entrepreneurs attendent inactifs.
+                Les vieux médias sont lents, ils se développent petit à petit. Les nouveaux médias sont flexibles et peuvent être façonnés rapidement par les circonstances.
+                Les vieux médias sont du capital, ils impriment de l’argent et promeuvent ce qu’ils veulent. Les nouveaux médias sont un guide, ils vous aident à vous frayer un chemin dans le labyrinthe de la mondialisation"
+                >
                     Eski kalıplardan çok yeni fırsatlara yönelerek medya sektörünü önden takip etmek" 
                     Medya grubu denince akla televizyon ve radyo kanallarından, gazetelerden, dergilerden oluşan dev bir aile gelir. Her medya girişimcisinin hayali de böyle bir aileye sahip olmaktır. Ne var ki bu ailenin yeni yuvası multimedya. Artık görüntülü, sesli ve yazılı yayıncılık tek çatı altında.
                     Multimedyanın grafikerleri yeni yeni yetişiyor. Yönetmenleri, editörleri, yazarları ise bulunmaz Hint kumaşı. İnsan kendi ürettiği teknolojinin hızına yetişemiyor. Yeni girişimciler için en prestijli kontenjanlar boşta bekliyor.
@@ -113,14 +144,14 @@
         </div>
         
         <div class="footer2">
-            <h2 id="footer-hizmet">HİZMETLERİMİZ</h2>
-            <p class="footer-hizmet-right">Medya Planlama</p>
-            <p class="footer-hizmet-right">Performans Pazarlama</p>
-            <p class="footer-hizmet-right">Büyük Veri Pazarlaması</p>
-            <p class="footer-hizmet-right">Programatik</p>
+            <h2 id="footer-hizmet" data-tr="HİZMETLERİMİZ" data-en="OUR SERVICES" data-fr="NOS SERVICES">HİZMETLERİMİZ</h2>
+            <p class="footer-hizmet-right" data-tr="Medya Planlama" data-en="media planning" data-fr="planification média">Medya Planlama</p>
+            <p class="footer-hizmet-right" data-tr="Performans Pazarlama" data-en="performance marketing" data-fr="marketing à la performance">Performans Pazarlama</p>
+            <p class="footer-hizmet-right" data-tr="Büyük Veri Pazarlaması" data-en="Big Data Marketing" data-fr="Marketing des mégadonnées">Büyük Veri Pazarlaması</p>
+            <p class="footer-hizmet-right" data-tr="Programatik" data-en="programmatic" data-fr="programmatique">Programatik</p>
         </div>
         <div class="footer-iletisim">
-            <h2>İletişim</h2>
+            <h2 data-tr="İletişim" data-en="Communication" data-fr="Communication">İletişim</h2>
             <div class="icons">
             <div class="location-container">
                 <div class="location-image"><svg id="location-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
@@ -170,11 +201,12 @@
          <p id="haklar-write">Copyright © 2022 Web Tasarım All rights reserved.</p>
      </div>
      <div class="footer3giz-söz">
-         <a id="footer2gizlilik" href="#">Gizlilik politikasi</a>
-         <a id="footer2sözlesme" href="#">Kullanıcı Sözleşmesi</a>
+        <a id="footer2gizlilik" href="#" data-tr="Gizlilik politikası" data-en="Privacy Policy" data-fr="politique de confidentialité">Gizlilik politikası</a>
+        <a id="footer2sözlesme" href="#" data-tr="Kullanıcı Sözleşmesi" data-en="user agreement" data-fr="Accord de l'utilisateur">Kullanıcı Sözleşmesi</a>
      </div>
      </div>
     <script src="../script.js"></script>
     <script src="../animation.js"></script>
+    <script src="../language.js"></script>
 </body>
 </html>

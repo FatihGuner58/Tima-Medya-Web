@@ -34,3 +34,43 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // Arama inputu ve sonuçlar listesi
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+
+    // Aranacak içerikler (örnek olarak)
+    const contentItems = [
+        { id: 'about', text: 'Biz Kimiz?' },
+        { id: 'media-plan', text: 'Medya Planlama' },
+        { id: 'performans-pazarlama', text: 'Performans Pazarlama' },
+        { id: 'büyük-veri-pazarlama', text: 'Büyük Veri Pazarlaması' },
+        { id: 'programatik', text: 'Programatik' },
+        { id: 'references-title', text: 'Referanslar' }
+    ];
+
+    searchInput.addEventListener('input', function () {
+        const query = searchInput.value.toLowerCase();
+        searchResults.innerHTML = '';
+
+        if (query.length > 0) {
+            const results = contentItems.filter(item => item.text.toLowerCase().includes(query));
+            if (results.length > 0) {
+                results.forEach(result => {
+                    const li = document.createElement('li');
+                    const link = document.createElement('a');
+                    link.href = `#${result.id}`;
+                    link.textContent = result.text;
+                    link.addEventListener('click', function() {
+                        searchContainer.style.display = 'none'; // Sonuç tıklandığında arama kutusunu kapat
+                    });
+                    li.appendChild(link);
+                    searchResults.appendChild(li);
+                });
+            } else {
+                searchResults.innerHTML = '<li>Arama Bulunamadı...</li>';
+            }
+        } 
+    });
+});
